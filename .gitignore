@@ -1,0 +1,8 @@
+# Composer
+/vendor
+
+# VSCode
+.vscode/*
+
+# JetBrains IDEs
+.idea/*
