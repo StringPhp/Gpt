@@ -17,8 +17,8 @@
     "require": {
         "php": "^8.3",
         "amphp/http-client": "^v5.1.0",
-        "stringphp/models": "dev-main",
-        "stringphp/utils": "dev-main"
+        "stringphp/models": "^v0.0.1",
+        "stringphp/utils": "^v0.0.2"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^3.16"
@@ -26,9 +26,5 @@
     "scripts": {
         "fix": "php-cs-fixer fix --using-cache=no",
         "fix:dry": "php-cs-fixer fix --using-cache=no --diff --dry-run"
-    },
-    "repositories": [{
-        "type": "path",
-        "url": "../**"
-    }]
+    }
 }
