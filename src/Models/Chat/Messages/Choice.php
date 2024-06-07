@@ -3,9 +3,9 @@
 namespace StringPhp\Gpt\Models\Chat\Messages;
 
 use StringPhp\Models\DataTypes\ModelType;
-use StringPhp\Models\SnakeToCamelCaseModel;
+use StringPhp\Models\JsonModel;
 
-class Choice extends SnakeToCamelCaseModel
+class Choice extends JsonModel
 {
     public string $finishReason;
     public int $index;

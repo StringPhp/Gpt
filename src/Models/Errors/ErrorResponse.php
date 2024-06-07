@@ -3,9 +3,9 @@
 namespace StringPhp\Gpt\Models\Errors;
 
 use StringPhp\Models\DataTypes\ModelType;
-use StringPhp\Models\SnakeToCamelCaseModel;
+use StringPhp\Models\JsonModel;
 
-class ErrorResponse extends SnakeToCamelCaseModel
+class ErrorResponse extends JsonModel
 {
     #[ModelType(Error::class)]
     public Error $error;

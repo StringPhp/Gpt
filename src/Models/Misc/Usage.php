@@ -2,9 +2,9 @@
 
 namespace StringPhp\Gpt\Models\Misc;
 
-use StringPhp\Models\SnakeToCamelCaseModel;
+use StringPhp\Models\JsonModel;
 
-class Usage extends SnakeToCamelCaseModel
+class Usage extends JsonModel
 {
     public int $completionTokens;
     public int $promptTokens;

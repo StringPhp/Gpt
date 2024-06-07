@@ -17,7 +17,7 @@
     "require": {
         "php": "^8.3",
         "amphp/http-client": "^v5.1.0",
-        "stringphp/models": "^v0.0.1",
+        "stringphp/models": "^v0.0.2",
         "stringphp/utils": "^v0.0.2"
     },
     "require-dev": {

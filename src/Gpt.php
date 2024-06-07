@@ -31,7 +31,7 @@ class Gpt
             $responseFormat = new ResponseFormat($responseFormat);
         }
 
-        return ChatCompletionRequest::map(array_filter(
+        return ChatCompletionRequest::mapFromJson(array_filter(
             compact(
                 'model',
                 'messages',

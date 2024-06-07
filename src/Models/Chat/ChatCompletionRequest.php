@@ -4,6 +4,7 @@ namespace StringPhp\Gpt\Models\Chat;
 
 use StringPhp\Gpt\Endpoint;
 use StringPhp\Gpt\Enums\Model;
+use StringPhp\Gpt\Exceptions\HttpException;
 use StringPhp\Gpt\Http;
 use StringPhp\Gpt\Method;
 use StringPhp\Gpt\Models\RequestModel;
@@ -31,7 +32,12 @@ class ChatCompletionRequest extends RequestModel
     #[ModelType(ResponseFormat::class, false)]
     public ResponseFormat $responseFormat;
 
-    /** @return ChatCompletionResponse */
+    /**
+     * @param Http $http
+     * @return ChatCompletionResponse
+     *
+     * @throws HttpException
+     */
     public function send(Http $http): ModelAbstraction
     {
         return $http->mapRequest(

@@ -7,9 +7,10 @@ use StringPhp\Gpt\Models\Chat\Messages\Choice;
 use StringPhp\Gpt\Models\Misc\Usage;
 use StringPhp\Models\DataTypes\ArrayType;
 use StringPhp\Models\DataTypes\ModelType;
-use StringPhp\Models\SnakeToCamelCaseModel;
+use StringPhp\Models\DataTypes\StringType;
+use StringPhp\Models\JsonModel;
 
-class ChatCompletionResponse extends SnakeToCamelCaseModel
+class ChatCompletionResponse extends JsonModel
 {
     public string $id;
 
@@ -19,6 +20,8 @@ class ChatCompletionResponse extends SnakeToCamelCaseModel
 
     public int $created;
     public Model $model;
+
+    #[StringType(false)]
     public string $systemFingerprint;
     public string $object;
 

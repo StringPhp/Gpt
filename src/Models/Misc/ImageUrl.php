@@ -2,9 +2,9 @@
 
 namespace StringPhp\Gpt\Models\Misc;
 
-use StringPhp\Models\SnakeToCamelCaseModel;
+use StringPhp\Models\JsonModel;
 
-class ImageUrl extends SnakeToCamelCaseModel
+class ImageUrl extends JsonModel
 {
     public string $url;
 

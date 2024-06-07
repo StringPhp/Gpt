@@ -2,14 +2,13 @@
 
 namespace StringPhp\Gpt\Models\Chat\Messages;
 
-use JsonSerializable;
 use StringPhp\Models\DataTypes\ArrayType;
 use StringPhp\Models\DataTypes\EnumType;
 use StringPhp\Models\DataTypes\ModelType;
 use StringPhp\Models\DataTypes\NativeType;
-use StringPhp\Models\SnakeToCamelCaseModel;
+use StringPhp\Models\JsonModel;
 
-class Message extends SnakeToCamelCaseModel implements JsonSerializable
+class Message extends JsonModel
 {
     #[ArrayType(new ModelType(UserMessagePart::class))]
     #[NativeType(NativeType::STRING, false)]

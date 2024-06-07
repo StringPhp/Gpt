@@ -5,9 +5,9 @@ namespace StringPhp\Gpt\Models\Chat\Messages;
 use StringPhp\Gpt\Models\Misc\ImageUrl;
 use StringPhp\Models\DataTypes\ModelType;
 use StringPhp\Models\DataTypes\StringType;
-use StringPhp\Models\SnakeToCamelCaseModel;
+use StringPhp\Models\JsonModel;
 
-class UserMessagePart extends SnakeToCamelCaseModel
+class UserMessagePart extends JsonModel
 {
     public UserMessagePartType $type;
 

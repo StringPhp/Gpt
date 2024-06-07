@@ -3,10 +3,10 @@
 namespace StringPhp\Gpt\Models;
 
 use StringPhp\Gpt\Http;
+use StringPhp\Models\JsonModel;
 use StringPhp\Models\Model;
-use StringPhp\Models\SnakeToCamelCaseModel;
 
-abstract class RequestModel extends SnakeToCamelCaseModel
+abstract class RequestModel extends JsonModel
 {
     abstract public function send(Http $http): Model;
 }
