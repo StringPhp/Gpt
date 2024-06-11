@@ -1554,16 +1554,16 @@
         },
         {
             "name": "stringphp/models",
-            "version": "v0.0.2.3",
+            "version": "v0.0.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/StringPhp/Models.git",
-                "reference": "d715556dfd2a8a8f80ef16cc21199b9e112cf7e4"
+                "reference": "61c5e5d33b38a677f066d22c89df394eee87e9ae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/StringPhp/Models/zipball/d715556dfd2a8a8f80ef16cc21199b9e112cf7e4",
-                "reference": "d715556dfd2a8a8f80ef16cc21199b9e112cf7e4",
+                "url": "https://api.github.com/repos/StringPhp/Models/zipball/61c5e5d33b38a677f066d22c89df394eee87e9ae",
+                "reference": "61c5e5d33b38a677f066d22c89df394eee87e9ae",
                 "shasum": ""
             },
             "require": {
@@ -1594,9 +1594,9 @@
             "description": "A collection of helpers for creating abstractions of data models in PHP.",
             "support": {
                 "issues": "https://github.com/StringPhp/Models/issues",
-                "source": "https://github.com/StringPhp/Models/tree/v0.0.2.3"
+                "source": "https://github.com/StringPhp/Models/tree/v0.0.2.4"
             },
-            "time": "2024-05-29T18:08:17+00:00"
+            "time": "2024-06-11T23:45:56+00:00"
         },
         {
             "name": "stringphp/utils",
@@ -2743,16 +2743,16 @@
         },
         {
             "name": "react/stream",
-            "version": "v1.3.0",
+            "version": "v1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/reactphp/stream.git",
-                "reference": "6fbc9672905c7d5a885f2da2fc696f65840f4a66"
+                "reference": "1e5b0acb8fe55143b5b426817155190eb6f5b18d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reactphp/stream/zipball/6fbc9672905c7d5a885f2da2fc696f65840f4a66",
-                "reference": "6fbc9672905c7d5a885f2da2fc696f65840f4a66",
+                "url": "https://api.github.com/repos/reactphp/stream/zipball/1e5b0acb8fe55143b5b426817155190eb6f5b18d",
+                "reference": "1e5b0acb8fe55143b5b426817155190eb6f5b18d",
                 "shasum": ""
             },
             "require": {
@@ -2762,7 +2762,7 @@
             },
             "require-dev": {
                 "clue/stream-filter": "~1.2",
-                "phpunit/phpunit": "^9.5 || ^5.7 || ^4.8.35"
+                "phpunit/phpunit": "^9.6 || ^5.7 || ^4.8.36"
             },
             "type": "library",
             "autoload": {
@@ -2809,7 +2809,7 @@
             ],
             "support": {
                 "issues": "https://github.com/reactphp/stream/issues",
-                "source": "https://github.com/reactphp/stream/tree/v1.3.0"
+                "source": "https://github.com/reactphp/stream/tree/v1.4.0"
             },
             "funding": [
                 {
@@ -2817,7 +2817,7 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2023-06-16T10:52:11+00:00"
+            "time": "2024-06-11T12:45:25+00:00"
         },
         {
             "name": "sebastian/diff",

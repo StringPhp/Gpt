@@ -3,11 +3,15 @@
 namespace StringPhp\Gpt;
 
 use StringPhp\Gpt\Enums\Model;
+use StringPhp\Gpt\Exceptions\HttpException;
 use StringPhp\Gpt\Models\Chat\ChatCompletionRequest;
 use StringPhp\Gpt\Models\Chat\ChatCompletionResponse;
 use StringPhp\Gpt\Models\Chat\Messages\Message;
 use StringPhp\Gpt\Models\ResponseFormat;
 use StringPhp\Gpt\Models\ResponseFormatType;
+use StringPhp\Models\Exception\InvalidValue;
+use StringPhp\Models\Exception\MissingRequiredValue;
+use StringPhp\Models\Exception\ModelException;
 
 class Gpt
 {
@@ -18,7 +22,18 @@ class Gpt
     }
 
     /**
+     * @param Model $model
      * @param Message[] $messages
+     * @param int $maxTokens
+     * @param int $n
+     * @param ResponseFormatType|null $responseFormat
+     *
+     * @return ChatCompletionResponse
+     *
+     * @throws HttpException
+     * @throws InvalidValue
+     * @throws MissingRequiredValue
+     * @throws ModelException
      */
     public function chatCompletion(
         Model $model,
@@ -31,7 +46,7 @@ class Gpt
             $responseFormat = new ResponseFormat($responseFormat);
         }
 
-        return ChatCompletionRequest::mapFromJson(array_filter(
+        return ChatCompletionRequest::map(array_filter(
             compact(
                 'model',
                 'messages',

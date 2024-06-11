@@ -53,7 +53,7 @@ class Http
         $response = $this->request($method, $uri, $body, $headers);
 
         try {
-            return [$class, 'map'](json_decode($response->getBody()->read(), true, flags: JSON_THROW_ON_ERROR));
+            return [$class, 'mapFromJson'](json_decode($response->getBody()->read(), true, flags: JSON_THROW_ON_ERROR));
         } catch (Throwable $e) {
             throw new HttpException($response, null, $e);
         }
