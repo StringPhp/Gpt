@@ -11,7 +11,7 @@ class HttpException extends Exception
 {
     public function __construct(
         public readonly ?Response $response = null,
-        ?ErrorResponse $errorResponse = null,
+        public readonly ?ErrorResponse $errorResponse = null,
         ?Throwable $previous = null
     )
     {
