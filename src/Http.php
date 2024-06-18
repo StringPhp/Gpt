@@ -113,7 +113,7 @@ class Http
         }
 
         try {
-            $error = ErrorResponse::mapFromJson(json_decode($response->getBody()->read(), true));
+            $error = ErrorResponse::mapFromJson(json_decode($response->getBody()->buffer(), true, flags: JSON_THROW_ON_ERROR));
         } catch (Throwable $e) {
             throw new HttpException($response, null, $e);
         }
